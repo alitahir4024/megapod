@@ -1,0 +1,521 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+  padding-top: 240px;
+  padding-bottom: 260px;
+  position: relative;
+
+  .container {
+    padding: 0;
+  }
+}
+
+.hero__text {
+  padding-top: 48px;
+
+  h5 {
+    color: $white-color;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+    span {
+      color: $primary-color;
+      margin-right: 5px;
+    }
+  }
+
+  h2 {
+    color: $white-color;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 35px;
+  }
+}
+
+.hero__pic {
+  height: 391px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single__track {
+  background: rgba(104, 99, 253, 0.2);
+  padding: 35px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.single__track__item__pic {
+  float: left;
+  margin-right: 20px;
+
+  img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+}
+
+.single__track__item__text {
+  overflow: hidden;
+  padding-top: 6px;
+
+  h5 {
+    color: $white-color;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: $white-color;
+    font-size: 15px;
+    display: block;
+  }
+}
+
+.single__track__option {
+  padding-top: 12px;
+}
+
+.jp-play {
+  position: relative;
+  height: 36px;
+  width: 36px;
+  background: transparent;
+  border: none;
+  background: $primary-color;
+  border-radius: 50%;
+
+  &:after {
+    position: absolute;
+    display: block;
+    left: 3px;
+    top: -4px;
+    content: "\45";
+    font-family: "ElegantIcons";
+    font-size: 30px;
+    color: $white-color;
+  }
+}
+
+.jp-state-playing .jp-play {
+  
+  &:after {
+    content: "\60"!important;
+    font-family: "ElegantIcons";
+    font-size: 32px;
+    left: 2px;
+    top: -6px;
+    color: #151433;
+  }
+}
+
+.jp-audio .jp-play:focus {
+  
+  &:after {
+    content: "\45";
+    font-family: "ElegantIcons";
+  }
+}
+
+.jp-seek-bar>div {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  width: 320px;
+}
+
+.player_bars {
+  width: 420px;
+  display: table;
+  padding-left: 50px;
+  position: relative;
+  padding-top: 18px;
+  float: left;
+  margin-right: 18px;
+}
+
+.jp-play-bar {
+  position: relative;
+  height: 100%;
+  background: $primary-color;
+  overflow: visible !important;
+}
+
+.jp-current-time {
+  font-size: 15px;
+  font-weight: 700;
+  color: $white-color;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+}
+
+.jp-duration {
+  font-size: 15px;
+  font-weight: 700;
+  color: $white-color;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.player_controls_box {
+  width: 36px;
+  float: left;
+  margin-right: 15px;
+}
+
+.jp-mute {
+  font-size: 14px;
+  border: none;
+  background: none;
+  color: $white-color;
+  position: absolute;
+  left: -5px;
+  top: 10px;
+}
+
+.jp-volume-bar {
+  height: 4px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.jp-volume-bar-value {
+  background: $primary-color;
+  height: 100%;
+}
+
+.jp-mute {
+  font-size: 14px;
+  color: $white-color;
+}
+
+.jp-volume-controls {
+  position: relative;
+  width: 80px;
+  float: left;
+  padding-left: 30px;
+  padding-top: 18px;
+  margin-right: 30px;
+}
+
+.jp-btns {
+  padding-top: 8px;
+  float: left;
+
+  a {
+    font-size: 15px;
+    color: $white-color;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/*---------------------
+  Podcast
+-----------------------*/
+.podcast {
+  padding-bottom: 70px;
+
+  .container {
+    padding: 0;
+  }
+}
+
+.podcast__top {
+  margin-bottom: 45px;
+
+  h2 {
+    color: #353535;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  ul {
+    text-align: right;
+    
+    li {
+      list-style: none;
+      font-size: 18px;
+      font-weight: 700;
+      color: #b7b7b7;
+      display: inline-block;
+      margin-right: 40px;
+      position: relative;
+      padding: 2px 0;
+      cursor: pointer;
+
+      &.active {
+        color: $primary-color;
+
+        &:after {
+          transform: scale(1);
+        }
+      }
+
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: $primary-color;
+        content: "";
+        transform: scale(0);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.podcast__item {
+  margin-bottom: 30px;
+}
+
+.podcast__item__pic {
+  float: left;
+
+  img {
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.podcast__item__text {
+  border: 1px solid #ebebeb;
+  padding: 45px 35px 46px 40px;
+  overflow: hidden;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+
+  .heart-icon {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    color: $primary-color;
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(104, 99, 253, 0.1);
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    @include transition(all, .3s);
+
+    &:hover {
+      background: $primary-color;
+      color: $white-color;
+    }
+  }
+
+  ul {
+    margin-bottom: 20px;
+
+    li {
+      color: #b7b7b7;
+      font-size: 15px;
+      display: inline-block;
+      margin-right: 45px;
+      position: relative;
+      list-style: none;
+
+      &:after {
+        position: absolute;
+        right: -26px;
+        top: -2px;
+        content: "|";
+      }
+
+      span {
+        color: $primary-color;
+        margin-right: 3px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  h4 {
+    color: #353535;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 38px;
+  }
+}
+
+.track__option {
+
+  .jp-seek-bar > div {
+    background: rgba(104, 99, 253, 0.1);
+  }
+
+  .jp-current-time {
+    color: #353535;
+  }
+
+  .jp-duration {
+    color: #353535;
+  }
+
+  .jp-mute {
+    color: #353535;
+  }
+  
+  .jp-volume-bar {
+    background: rgba(103, 99, 125, 0.1);
+  }
+
+  .jp-btns {
+
+    a {
+      color: #b7b7b7;
+    }
+  }
+}
+
+/*---------------------
+  Call To Action
+-----------------------*/
+.callto {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.callto__text {
+  text-align: center;
+
+  h2 {
+    color: $white-color;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $white-color;
+    font-size: 22px;
+    margin-bottom: 45px;
+  }
+}
+
+/*---------------------
+  Episodes
+-----------------------*/
+.episodes {
+  padding-bottom: 165px;
+}
+
+.episodes__item {
+  height: 370px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &:hover {
+
+    .play-btn {
+      opacity: 1;
+      z-index: 9;
+    }
+
+    .episodes__text {
+      bottom: 25px;
+
+      h4 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .play-btn {
+    opacity: 0;
+    @include transition(all, .3s);
+  }
+
+  .tags {
+    font-size: 13px;
+    color: $white-color;
+    font-weight: 700;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 15px 6px;
+    border-radius: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    
+    span {
+      margin-right: 2px;
+    }
+  }
+
+  .time {
+    font-size: 13px;
+    color: $white-color;
+    font-weight: 700;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 15px 6px;
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+.episodes__text {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  padding: 0 30px;
+  @include transition(all, .5s);
+
+  h4 {
+    color: $white-color;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 50px;
+    @include transition(all, .2s);
+  }
+
+  p {
+    color: $white-color;
+    margin-bottom: 0;
+
+    span {
+      color: $primary-color;
+    }
+  }
+}

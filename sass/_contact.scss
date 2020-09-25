@@ -1,0 +1,89 @@
+/*---------------------
+  Contact
+-----------------------*/
+.contact {
+  padding-bottom: 165px;
+}
+
+.contact__map {
+  height: 500px;
+  margin-bottom: 30px;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.contact__widget__item {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 55px 40px 40px;
+  margin-bottom: 30px;
+
+  h4 {
+    color: #353535;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.contact__form {
+  padding-top: 60px;
+
+  h2 {
+    color: #353535;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  form {
+
+    input {
+      height: 50px;
+      width: 100%;
+      font-size: 15px;
+      color: #8d8d8d;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding-left: 20px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+
+      &::placeholder {
+        color: #8d8d8d;
+      }
+    }
+
+    textarea {
+      height: 150px;
+      width: 100%;
+      font-size: 15px;
+      color: #8d8d8d;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding-left: 20px;
+      border-radius: 5px;
+      margin-bottom: 34px;
+      padding-top: 14px;
+      resize: none;
+
+      &::placeholder {
+        color: #8d8d8d;
+      }
+    }
+
+    button {
+      border-radius: 5px;
+      padding: 14px 38px 12px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/*---------------------
+  Footer
+-----------------------*/
+.footer {
+  padding-bottom: 60px;
+}
+
+.footer__subscriber {
+  background: $primary-color;
+  padding: 40px;
+  border-radius: 10px;
+  top: -65px;
+  position: relative;
+}
+
+.footer__subscriber__text {
+
+  h3 {
+    color: $white-color;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  p {
+    color: $white-color;
+    margin-bottom: 0;
+  }
+}
+
+.footer__subscriber__form {
+  position: relative;
+  margin-top: 7px;
+
+  input {
+    height: 52px;
+    width: 100%;
+    padding-left: 28px;
+    background: $white-color;
+    border: none;
+    color: #b7b7b7;
+    border-radius: 50px;
+
+    &::placeholder {
+      color: #b7b7b7;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 7px;
+    top: 6px;
+  }
+}
+
+.footer__logo {
+  float: left;
+  margin-right: 15px;
+}
+
+.footer__copyright__text {
+  overflow: hidden;
+  color: $white-color;
+  margin-bottom: 0;
+  line-height: 31px;
+
+  i {
+    color: $primary-color;
+  }
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.footer__social {
+  text-align: right;
+
+  a {
+    display: inline-block;
+    font-size: 16px;
+    color: $white-color;
+    margin-right: 18px;
+    @include transition(all, .3s);
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+/*---------------------
+  About
+-----------------------*/
+.about__text {
+    margin-bottom: 30px;
+
+    span {
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #353535;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+
+    p {
+        margin-bottom: 35px;
+    }
+}
+
+.about__item {
+    margin-bottom: 30px;
+
+    h6 {
+        color: #353535;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.about__pic {
+    padding-top: 25px;
+
+    img {
+        min-width: 100%;
+    }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+    padding-bottom: 135px;
+
+    .section-title {
+
+        h2 {
+            font-size: 44px;
+        }
+    }
+}
+
+.team__item {
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+        min-width: 100%;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        color:#353535;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    span {
+        font-size: 14px;
+        color: $primary-color;
+        font-weight: 700;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,194 @@
+/*---------------------
+  Header
+-----------------------*/
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    &.header--normal {
+        position: relative;
+        background: #290849;
+    }
+}
+
+.header__logo {
+    padding: 25px 0;
+    display: inline-block;
+    margin-right: 250px;
+
+    a {
+        display: inline-block;
+    }
+}
+
+.header__menu {
+    display: inline-block;
+
+    ul {
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 45px;
+            position: relative;
+
+            &.active {
+
+                a {
+
+
+                    &:after {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            &:hover {
+
+                a {
+
+                    &:after {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+
+                .dropdown {
+                    top: 82px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .dropdown {
+                position: absolute;
+                left: 0;
+                top: 110px;
+                width: 150px;
+                background: $heading-color;
+                text-align: left;
+                padding: 2px 0;
+                z-index: 9;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(all, .3s);
+
+                li {
+                    display: block;
+                    margin-right: 0;
+
+                    a {
+                        font-size: 14px;
+                        color: $white-color;
+                        font-weight: 400;
+                        padding: 8px 20px;
+                        text-transform: capitalize;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            a {
+                font-size: 18px;
+                font-weight: 700;
+                color: $white-color;
+                display: block;
+                padding: 26px 0 28px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 100%;
+                    height: 2px;
+                    background: $primary-color;
+                    content: '';
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    @include transition(all, .5s);
+                }
+            }
+        }
+    }
+}
+
+.header__right {
+    padding: 25px 0;
+    text-align: right;
+}
+
+.header__right__search {
+    display: inline-block;
+    margin-right: 130px;
+
+    form {
+        width: 225px;
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 30px;
+            font-size: 16px;
+            color: #ffffff;
+            opacity: .3;
+            background: transparent;
+            border: none;
+
+            &::placeholder {
+                color: #ffffff;
+            }
+        }
+
+        button {
+            font-size: 16px;
+            color: #ffffff;
+            border: none;
+            background: transparent;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+    }
+}
+
+.header__right__social {
+    display: inline-block;
+
+    a {
+        display: inline-block;
+        font-size: 16px;
+        color: $white-color;
+        margin-right: 18px;
+        @include transition(all, .3s);
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.canvas__open {
+    display: none;
+}
+
+.offcanvas-menu-wrapper {
+    display: none;
+}
