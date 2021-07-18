@@ -18,4 +18,4 @@ Mega pod is a stunning free podcast HTML5 website template that will help promot
 
 ## Project Preview:
 
-(https://ali-tahir4024.github.io/megapod/index.html)
+[Megapod](https://alitahir4024.github.io/megapod/index.html)
